@@ -4,6 +4,5 @@ set -eu
 
 echo "Set up x shell scripts"
 
-for filename in $(ls src); do
-    echo $filename
-done
+ln -s $(pwd)/src/x-set-proxy /usr/local/bin/x-set-proxy
+alias xsp="/usr/local/bin/x-set-proxy"
